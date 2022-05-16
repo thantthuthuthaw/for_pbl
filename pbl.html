@@ -11,6 +11,10 @@
 			background-repeat: no-repeat;
 			background-color: #FCF1DD;
 		}
+		.img {
+			width: 150px;
+			height: 175px;
+		}
 		ul.only {
 			font-size: 20px;
 		}
@@ -20,38 +24,6 @@
 		}
 		a {
 			text-decoration: none;
-		}
-		li.female {
-			list-style: none;
-			text-align: center;
-		}
-		li.male {
-			list-style: none;
-			text-align: center;
-		}
-		ul.female {
-			background-color: deeppink;
-			line-height: 55px;
-			height: 55px;
-			padding: 15px;
-			width: 1475px;
-		}
-		ul.male {
-			background-color: deeppink;
-			line-height: 55px;
-			height: 55px;
-			padding: 15px;
-			width: 1475px;
-		}
-		a.male {
-			font-family: sans-serif;
-			color: white;
-			display: block;
-		}
-		a.female {
-			font-family: sans-serif;
-			color: white;
-			display: block;
 		}
 		a.special:hover {
 			background-color: #f2e6ff;
@@ -64,14 +36,24 @@
 		li.both {
 			list-style: none;
 		}
+		.block {
+			display: inline-block;
+			text-align: center;
+		}
+		.idk {
+			text-align: center;
+		}
+		.f_img {
+			margin-left: 15px;
+		}
 	</style>
 </head>
 <body>
 
 	<ul class="navbar">
-		<li class="navbar active"><a class="navbar" href="">Home</a></li>
-		<li class="navbar"><a class="navbar" href="">About Us</a></li>
-		<li class="navbar"><a class="navbar" href="">Purpose</a></li>
+		<li class="navbar active"><a class="navbar" href="pbl.html">Home</a></li>
+		<li class="navbar"><a class="navbar" href="health-warning.html">Health warning</a></li>
+		<li class="navbar"><a class="navbar" href="">Diet food plan</a></li>
 		<li class="navbar"><a class="navbar" href="refrences.html">References</a></li>
 	</ul>
 	   
@@ -125,23 +107,24 @@
 	<div style="float: left;">
 		<h1>What is strength and stamina in workout?</h1>
 		<p class="margin"><b><big>Strength: </b></big>As a sport definition, it’s the ability to carry out work against a resistance. Training can improve your strength like lifting weights or otherwise.</p>
-		<p class="margin">Stamina is defined as “the ability to sustain prolonged physical or mental effort,” according to Oxford Dictionary. With a good stamina, you can run faster for long distance. The better stamina, the more efficient you become at just about everything, mentally and physically.</p>
+		<p class="margin"><b><big>Stamina</big></b> is defined as “the ability to sustain prolonged physical or mental effort,” according to Oxford Dictionary. With a good stamina, you can run faster for long distance. The better stamina, the more efficient you become at just about everything, mentally and physically.</p>
 	</div>
 
-	<div style="float: left;">
-		<ul class="male">
-			<li class="male"><a class="male" href="male.html">For Male</a></li>
-		</ul>
-	
-
-	<ul>
-		<li class="both"><p class="both">Choose the correct gender.</p></li>
+    <div class="idk">
+	<div class="block">
+		<a href="male.html" id="male"><img class="img" src="male.png" alt="male"></a>
+	</div>
+    
+    <div class="block">
+	<ul class="both">
+		<li class="both"><p class="both"><mark>Choose the correct gender.</mark></p></li>
 	</ul>
+    </div>
 
-		<ul class="female">
-			<li class="female"><a class="female" href="female.html">For Female</a></li>
-		</ul></div>
-	
+	<div class="block f_img">
+		<a href="female.html" id="female"><img class="img" src="female.png" alt="male"></a>
+	</div>
+    </div>
 
 </body>
 </html>
